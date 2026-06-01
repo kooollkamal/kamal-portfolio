@@ -1,198 +1,582 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A B Kamal - Full Stack Developer | Computer Science Engineering Student">
+    <meta name="keywords" content="Full Stack Developer, Web Developer, AI Enthusiast, JavaScript, React">
+    <meta name="author" content="A B Kamal">
 
-<title>A B Kamal | Full Stack Developer</title>
+    <title>A B Kamal | Full Stack Developer & CS Engineering Student</title>
 
-<link rel="stylesheet" href="styles.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-
-<nav>
-    <div class="container nav-container">
-        <div class="logo">A B Kamal</div>
-
-        <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#profiles">Profiles</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </div>
-</nav>
-
-<section class="hero">
-
-    <div class="container hero-content">
-
-        <div class="hero-text">
-
-            <h3>Hello, I'm</h3>
-
-            <h1>A B Kamal</h1>
-
-            <h2 id="typing"></h2>
-
-            <p>
-                Passionate Full Stack Developer and Computer Science Engineering student focused on building modern web applications, learning emerging technologies, and solving real-world problems through software.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#contact" class="btn">Contact Me</a>
-
-                <a href="https://www.linkedin.com/in/kamal-a-b-/" target="_blank" class="btn secondary-btn">
-                    LinkedIn
-                </a>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">
+                <i class="fas fa-code"></i> A B Kamal
             </div>
 
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
+    </nav>
 
-        <div class="hero-image">
-            <!-- Profile Image - Replace profile.jpg with your actual image -->
-            <img src="profile.jpg" alt="A B Kamal - Full Stack Developer" loading="lazy">
+<!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <span class="hero-greeting">Welcome to my portfolio</span>
+                    <h1 class="hero-title">A B Kamal</h1>
+                    <h2 class="hero-subtitle" id="typing"></h2>
+                    <p class="hero-description">
+                        Passionate Full Stack Developer & Computer Science Engineering student dedicated to creating beautiful, 
+                        functional web applications. I combine technical expertise with creative problem-solving to deliver 
+                        exceptional digital experiences.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fas fa-envelope"></i> Get In Touch
+                        </a>
+                        <a href="https://github.com/kooollkamal" target="_blank" class="btn btn-secondary">
+                            <i class="fab fa-github"></i> View GitHub
+                        </a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">30+</span>
+                            <span class="stat-label">Hackathons</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">7.11</span>
+                            <span class="stat-label">CGPA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-image-container">
+                    <div class="image-wrapper">
+                        <img src="profile.jpg" alt="A B Kamal - Full Stack Developer" loading="lazy" class="hero-image">
+                    </div>
+                </div>
+            </div>
         </div>
-
-    </div>
-
-</section>
-
-<section id="about">
-
-    <div class="container">
-
-        <h2 class="section-title">About Me</h2>
-
-        <p class="about-text">
-            I am A B Kamal, a B.Tech Computer Science Engineering student at Madanapalle Institute of Technology and Science (MITS). I enjoy creating responsive websites, learning Artificial Intelligence concepts, and continuously improving my software development skills.
-            <br><br>
-            I actively participate in hackathons and technical events such as Smart India Hackathon (SIH) and NxtGenSec Hackathons to enhance my practical knowledge and problem-solving abilities.
-        </p>
-
-    </div>
-
-</section>
-
-<section id="skills">
-
-    <div class="container">
-
-        <h2 class="section-title">Skills</h2>
-
-        <div class="skills-grid">
-
-            <div class="card">
-                <i class="fab fa-html5"></i>
-                <h3>HTML5</h3>
+    </section>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know who I am and what drives me</p>
             </div>
 
-            <div class="card">
-                <i class="fab fa-css3-alt"></i>
-                <h3>CSS3</h3>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm <strong>A B Kamal</strong>, a passionate Full Stack Developer and B.Tech Computer Science Engineering 
+                        student at Madanapalle Institute of Technology and Science (MITS). With a keen interest in web technologies 
+                        and artificial intelligence, I'm committed to building scalable, user-friendly applications that solve 
+                        real-world problems.
+                    </p>
+
+                    <h3>My Passion</h3>
+                    <p>
+                        I thrive on learning emerging technologies and staying updated with industry best practices. Whether it's 
+                        crafting responsive web interfaces or exploring AI concepts, I approach every project with dedication and 
+                        attention to detail. I'm an active participant in hackathons and technical events, constantly pushing my 
+                        boundaries.
+                    </p>
+
+                    <h3>Why Work With Me?</h3>
+                    <ul class="about-list">
+                        <li><i class="fas fa-check"></i> Full stack development expertise</li>
+                        <li><i class="fas fa-check"></i> Problem-solving mindset</li>
+                        <li><i class="fas fa-check"></i> Attention to code quality</li>
+                        <li><i class="fas fa-check"></i> Quick learner & adaptable</li>
+                        <li><i class="fas fa-check"></i> Team player & collaborator</li>
+                    </ul>
+                </div>
+
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <h4>Experience</h4>
+                        <p class="stat-value">2+ Years</p>
+                        <p class="stat-desc">Development & Learning</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h4>Projects</h4>
+                        <p class="stat-value">50+</p>
+                        <p class="stat-desc">Completed Successfully</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Education</h4>
+                        <p class="stat-value">B.Tech CSE</p>
+                        <p class="stat-desc">CGPA: 7.11</p>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h4>Hackathons</h4>
+                        <p class="stat-value">30+</p>
+                        <p class="stat-desc">Participated & Won</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Technical Skills</h2>
+                <p class="section-subtitle">Technologies and tools I work with</p>
             </div>
 
-            <div class="card">
-                <i class="fab fa-js"></i>
-                <h3>JavaScript</h3>
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Vue.js</span>
+                        <span class="skill-tag">Responsive Design</span>
+                        <span class="skill-tag">UI/UX</span>
+                    </div>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Express.js</span>
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Authentication</span>
+                    </div>
+                </div>
+
+                <!-- Tools & Databases -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Databases</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">PostgreSQL</span>
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">Firebase</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">VS Code</span>
+                    </div>
+                </div>
+
+                <!-- Other Skills -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>Other Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Artificial Intelligence</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Agile</span>
+                        <span class="skill-tag">Team Collaboration</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Achievements</h2>
+                <p class="section-subtitle">Highlights of my professional journey</p>
             </div>
 
-            <div class="card">
-                <i class="fab fa-github"></i>
-                <h3>GitHub</h3>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <div class="exp-badge">Hackathon</div>
+                    <h3>Smart India Hackathon (SIH)</h3>
+                    <p class="exp-date"><i class="fas fa-calendar"></i> Multiple Participations</p>
+                    <p class="exp-description">
+                        Active participant in India's largest national hackathon. Developed innovative solutions 
+                        for real-world problems with diverse teams, enhancing collaborative and technical skills.
+                    </p>
+                    <div class="exp-skills">
+                        <span>Full Stack Development</span>
+                        <span>Teamwork</span>
+                        <span>Innovation</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="exp-badge">Hackathon</div>
+                    <h3>NxtGenSec Hackathons</h3>
+                    <p class="exp-date"><i class="fas fa-calendar"></i> Multiple Participations</p>
+                    <p class="exp-description">
+                        Specialized in security-focused development. Participated in building secure applications 
+                        and exploring cybersecurity concepts through practical challenges.
+                    </p>
+                    <div class="exp-skills">
+                        <span>Security</span>
+                        <span>Web Development</span>
+                        <span>Problem Solving</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="exp-badge">Freelance</div>
+                    <h3>Web Development Projects</h3>
+                    <p class="exp-date"><i class="fas fa-calendar"></i> Ongoing</p>
+                    <p class="exp-description">
+                        Developed 50+ web applications and websites for clients. Specialized in responsive 
+                        design, backend development, and database management with emphasis on performance.
+                    </p>
+                    <div class="exp-skills">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>Database Design</span>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="exp-badge">Learning</div>
+                    <h3>Artificial Intelligence & ML</h3>
+                    <p class="exp-date"><i class="fas fa-calendar"></i> Current Focus</p>
+                    <p class="exp-description">
+                        Actively learning and implementing AI/ML concepts. Working on machine learning projects 
+                        to leverage data insights and build intelligent applications.
+                    </p>
+                    <div class="exp-skills">
+                        <span>Python</span>
+                        <span>Data Analysis</span>
+                        <span>ML Algorithms</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">Showcase of my recent work and accomplishments</p>
             </div>
 
-            <div class="card">
-                <i class="fas fa-robot"></i>
-                <h3>Artificial Intelligence</h3>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p class="project-description">
+                            Full-stack e-commerce solution with user authentication, product management, 
+                            shopping cart, and secure payment integration.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Stripe API</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p class="project-description">
+                            Collaborative task management application with real-time updates, team features, 
+                            notifications, and intuitive UI for productivity.
+                        </p>
+                        <div class="project-tech">
+                            <span>Vue.js</span>
+                            <span>Firebase</span>
+                            <span>Tailwind CSS</span>
+                            <span>WebSocket</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Analytics Dashboard</h3>
+                        <p class="project-description">
+                            Powerful analytics dashboard with real-time data visualization, custom reporting, 
+                            and interactive charts for business intelligence.
+                        </p>
+                        <div class="project-tech">
+                            <span>React.js</span>
+                            <span>D3.js</span>
+                            <span>PostgreSQL</span>
+                            <span>Express.js</span>
+                        </div>
+                        <a href="#" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> View Project
+                        </a>
+                    </div>
+                </div>
             </div>
 
+            <div class="projects-cta">
+                <p>Want to see more? <a href="https://github.com/kooollkamal" target="_blank" class="link">Check out my GitHub</a></p>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic background and qualifications</p>
+            </div>
 
-</section>
+            <div class="education-timeline">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>B.Tech - Computer Science Engineering</h3>
+                        <p class="institute">Madanapalle Institute of Technology and Science (MITS)</p>
+                        <div class="education-info">
+                            <span><strong>CGPA:</strong> 7.11/10</span>
+                            <span><strong>Duration:</strong> 2022 - 2028 (Expected)</span>
+                            <span><strong>Location:</strong> Tirupati, Andhra Pradesh</span>
+                        </div>
+                        <p class="education-desc">
+                            Comprehensive study of computer science fundamentals, web development, data structures, 
+                            algorithms, databases, and artificial intelligence. Actively involved in technical events 
+                            and hackathons.
+                        </p>
+                    </div>
+                </div>
 
-<section id="education">
-
-    <div class="container">
-
-        <h2 class="section-title">Education</h2>
-
-        <div class="education-card">
-
-            <h3>B.Tech - Computer Science Engineering</h3>
-
-            <p>Madanapalle Institute of Technology and Science (MITS)</p>
-
-            <p>CGPA: 7.11</p>
-
-            <p>Expected Graduation Year: 2028</p>
-
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="education-details">
+                        <h3>Intermediate Education</h3>
+                        <p class="institute">S.R Junior College, Tirupati</p>
+                        <div class="education-info">
+                            <span><strong>Stream:</strong> MPC (Mathematics, Physics, Chemistry)</span>
+                            <span><strong>Percentage:</strong> 92%</span>
+                            <span><strong>Location:</strong> Tirupati, Andhra Pradesh</span>
+                        </div>
+                        <p class="education-desc">
+                            Solid foundation in mathematics, physics, and chemistry. This period sparked my interest 
+                            in technology and programming, leading to my pursuit of Computer Science Engineering.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="education-card">
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Feel free to reach out. I'd love to hear from you!</p>
+            </div>
 
-            <h3>Intermediate Education</h3>
+            <div class="contact-container">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:kooollkamal@gmail.com">kooollkamal@gmail.com</a>
+                            <p>I'll respond within 24 hours</p>
+                        </div>
+                    </div>
 
-            <p>S.R Junior College, Tirupati</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+917899506906">+91 7899506906</a>
+                            <p>Available for calls</p>
+                        </div>
+                    </div>
 
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>Chinnagottigallu, Tirupati District</p>
+                            <p>Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Follow Me</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/kooollkamal" target="_blank" class="social-icon" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/kamal-a-b-/" target="_blank" class="social-icon" title="LinkedIn">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.geeksforgeeks.org/profile/kamal06gzc3" target="_blank" class="social-icon" title="GeeksforGeeks">
+                                <i class="fas fa-code"></i>
+                            </a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon" title="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
         </div>
+    </section>
 
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>A B Kamal</h3>
+                    <p>Full Stack Developer & Computer Science Engineering Student</p>
+                    <p class="footer-tagline">Building innovative solutions through code</p>
+                </div>
 
-</section>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
 
-<section id="profiles">
+                <div class="footer-section">
+                    <h4>Follow Me</h4>
+                    <div class="footer-socials">
+                        <a href="https://github.com/kooollkamal" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/kamal-a-b-/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.geeksforgeeks.org/profile/kamal06gzc3" target="_blank" title="GeeksforGeeks"><i class="fas fa-code"></i></a>
+                    </div>
+                </div>
+            </div>
 
-    <div class="container">
-
-        <h2 class="section-title">Coding Profiles</h2>
-
-        <div class="profile-links">
-
-            <a href="https://github.com/kooollkamal" target="_blank">
-                <i class="fab fa-github"></i> GitHub
-            </a>
-
-            <a href="https://www.linkedin.com/in/kamal-a-b-/" target="_blank">
-                <i class="fab fa-linkedin"></i> LinkedIn
-            </a>
-
-            <a href="https://www.geeksforgeeks.org/profile/kamal06gzc3" target="_blank">
-                <i class="fas fa-code"></i> GeeksforGeeks
-            </a>
-
+            <div class="footer-bottom">
+                <p>&copy; 2026 A B Kamal. All rights reserved.</p>
+                <p>Designed & Developed with <i class="fas fa-heart"></i> using HTML5, CSS3 & JavaScript</p>
+            </div>
         </div>
-
-    </div>
-
-</section>
-
-<section id="contact">
-
-    <div class="container contact">
-
-        <h2 class="section-title">Contact</h2>
-
-        <p>Email: <a href="mailto:kooollkamal@gmail.com" style="text-decoration: none; color: #2563eb;">kooollkamal@gmail.com</a></p>
-
-        <p>Phone: <a href="tel:+917899506906" style="text-decoration: none; color: #2563eb;">+91 7899506906</a></p>
-
-        <p>Location: Chinnagottigallu, Tirupati District, Andhra Pradesh</p>
-
-    </div>
-
-</section>
-
-<footer>
-    <p>© 2026 A B Kamal | Full Stack Developer</p>
-</footer>
+    </footer>
 
 <script src="script.js"></script>
 
