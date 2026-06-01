@@ -272,9 +272,10 @@ a:hover {
 
 .hero-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 1fr;
     gap: var(--spacing-2xl);
     align-items: center;
+    justify-items: stretch;
 }
 
 .hero-greeting {
@@ -356,28 +357,78 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: var(--spacing-lg);
 }
 
 .image-wrapper {
     position: relative;
     width: 100%;
-    max-width: 400px;
+    max-width: 450px;
     aspect-ratio: 1;
-    border-radius: 20px;
+}
+
+.profile-placeholder {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
     overflow: hidden;
-    box-shadow: 0 30px 60px rgba(37, 99, 235, 0.2);
-    animation: float 3s ease-in-out infinite;
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(37, 99, 235, 0.05));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 
+        0 30px 60px rgba(37, 99, 235, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    animation: float 4s ease-in-out infinite;
+    border: 2px solid rgba(37, 99, 235, 0.1);
 }
 
 .hero-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.profile-placeholder i {
+    font-size: 8rem;
+    color: var(--primary-color);
+    opacity: 0.2;
+}
+
+/* Decorative elements */
+.image-decoration {
+    position: absolute;
+    border: 2px solid var(--primary-color);
+    border-radius: 30px;
+    opacity: 0.15;
+    animation: rotate 8s linear infinite;
+}
+
+.top-decoration {
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+}
+
+.bottom-decoration {
+    width: 90%;
+    height: 90%;
+    bottom: -5%;
+    right: -5%;
+    animation: rotate 10s linear infinite reverse;
 }
 
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
-    50% { transform: translateY(-20px); }
+    50% { transform: translateY(-25px); }
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* ==================== ABOUT SECTION ==================== */
@@ -1072,8 +1123,18 @@ a:hover {
     }
 
     .hero-image-container {
-        max-width: 300px;
+        max-width: 100%;
         margin: 0 auto;
+        padding: 0 var(--spacing-md);
+    }
+
+    .image-wrapper {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    .image-decoration {
+        display: none;
     }
 
     .about-content,
@@ -1125,6 +1186,10 @@ a:hover {
 
     .stat-card {
         padding: var(--spacing-md);
+    }
+
+    .image-wrapper {
+        max-width: 280px;
     }
 
     .about-stats {
